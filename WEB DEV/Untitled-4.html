@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Photo Gallery - GCET Jammu</title>
+
+    <link rel="stylesheet" href="new css.css">
+
+    <style>
+        /* Gallery-specific styles */
+
+        .gallery-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .page-title {
+            text-align: center;
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .title-underline {
+            width: 80px;
+            height: 4px;
+            background-color: #961a28;
+            margin: 0 auto 35px;
+            border-radius: 2px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Tablet screens */
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+
+            .gallery-grid img {
+                height: 200px;
+            }
+
+            .page-title {
+                font-size: 28px;
+            }
+        }
+
+        /* Mobile screens */
+        @media (max-width: 480px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid img {
+                height: 230px;
+            }
+
+            .gallery-container {
+                padding: 25px 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header: matches the homepage -->
+    <header>
+        <img
+            src="https://gcetj.ac.in/department.php?dept=humanities"
+            alt="GCET Logo"
+            id="logo"
+        >
+
+        <div id="college-name">
+            <h1>Govt. College of Engineering and Technology, Jammu</h1>
+            <p>(Autonomous College)</p>
+
+            <div class="header-actions">
+                <a href="link form to website.html" class="btn">
+                    Login
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation: Gallery is the active page -->
+    <nav>
+        <ul>
+            <li>
+                <a href="Untitled-1.html">Home</a>
+            </li>
+            <li>
+                <a href="Untitled-2.html">About</a>
+            </li>
+            <li>
+                <a href="Untitled-3.html">Faculty</a>
+            </li>
+            <li>
+                <a href="Untitled-5.html">Students</a>
+            </li>
+            <li>
+                <a href="Untitled-4.html" class="active">Gallery</a>
+            </li>
+            <li>
+                <a href="Untitled-6.html">Admission</a>
+            </li>
+            <li>
+                <a href="Untitled-7.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Gallery content -->
+    <main class="gallery-container">
+
+        <h2 class="page-title">Photo Gallery</h2>
+        <div class="title-underline"></div>
+
+        <div class="gallery-grid">
+
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7dGf3ctwgO_o5tcS9Go0QpBgG8175I-Hy5Hx8EorKCA&s=10"
+                alt="College Campus"
+                loading="lazy"
+            >
+
+            <img
+                src="https://gcetj.ac.in/photos/college-building/1.JPG"
+                alt="College Building"
+                loading="lazy"
+            >
+
+            <img
+                src="https://gcetj.ac.in/photos/college-building/2.JPG"
+                alt="College Campus Building"
+                loading="lazy"
+            >
+
+            <img
+                src="https://gcetj.ac.in/photos/college-building/6.jpg"
+                alt="College Campus View"
+                loading="lazy"
+            >
+
+            <img
+                src="https://gcetj.ac.in/photos/induction/INDUCTION%20PROG.jpeg"
+                alt="Student Induction Programme"
+                loading="lazy"
+            >
+
+            <img
+                src="https://gcetj.ac.in/photos/induction/INDUCTION%20PROG%205.jpeg"
+                alt="College Induction Programme"
+                loading="lazy"
+            >
+
+        </div>
+    </main>
+
+    <!-- Footer: matches the homepage -->
+    <footer>
+        &copy; 2026 GCET Jammu. All Rights Reserved.
+    </footer>
+
+</body>
+</html>

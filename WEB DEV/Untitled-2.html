@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us - GCET Jammu</title>
+
+    <!-- Common stylesheet used by the homepage -->
+    <link rel="stylesheet" href="new css.css">
+
+    <style>
+        /* About page specific styling */
+
+        .about-container {
+            max-width: 1150px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .page-title {
+            text-align: center;
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .title-underline {
+            width: 80px;
+            height: 4px;
+            background-color: #961a28;
+            margin: 0 auto 35px;
+            border-radius: 2px;
+        }
+
+        /* College introduction */
+
+        .about-top-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 35px;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .about-img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .about-top-text {
+            padding: 25px;
+            background-color: #fff;
+            border-left: 5px solid #961a28;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .about-top-text h3 {
+            color: #800000;
+            font-size: 24px;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .about-top-text p {
+            font-size: 16px;
+            line-height: 1.9;
+            color: #555;
+            margin: 0;
+        }
+
+        /* Vision and mission */
+
+        .vision-mission-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .vision-mission-card {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            border-top: 5px solid #961a28;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.09);
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease;
+        }
+
+        .vision-mission-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.13);
+        }
+
+        .vision-mission-card h3 {
+            color: #800000;
+            font-size: 24px;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .vision-mission-card p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 0;
+        }
+
+        .about-highlight {
+            margin-top: 35px;
+            padding: 25px;
+            text-align: center;
+            color: white;
+            background: linear-gradient(135deg, #800000, #961a28);
+            border-radius: 10px;
+        }
+
+        .about-highlight h3 {
+            font-size: 23px;
+            margin: 0 0 12px;
+        }
+
+        .about-highlight p {
+            font-size: 16px;
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        /* Tablet */
+
+        @media (max-width: 768px) {
+            .about-top-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .about-img {
+                height: 280px;
+            }
+
+            .vision-mission-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .page-title {
+                font-size: 28px;
+            }
+        }
+
+        /* Mobile */
+
+        @media (max-width: 480px) {
+            .about-container {
+                padding: 25px 15px;
+            }
+
+            .about-img {
+                height: 220px;
+            }
+
+            .about-top-text,
+            .vision-mission-card {
+                padding: 20px;
+            }
+
+            .about-top-text h3,
+            .vision-mission-card h3 {
+                font-size: 21px;
+            }
+
+            .about-highlight {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header matching the homepage -->
+    <header>
+        <img
+            src="https://gcetj.ac.in/department.php?dept=humanities"
+            alt="GCET Logo"
+            id="logo"
+        >
+
+        <div id="college-name">
+            <h1>Govt. College of Engineering and Technology, Jammu</h1>
+            <p>(Autonomous College)</p>
+
+            <div class="header-actions">
+                <a href="link form to website.html" class="btn">
+                    Login
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation with About marked active -->
+    <nav>
+        <ul>
+            <li>
+                <a href="Untitled-1.html">Home</a>
+            </li>
+            <li>
+                <a href="Untitled-2.html" class="active">About</a>
+            </li>
+            <li>
+                <a href="Untitled-3.html">Faculty</a>
+            </li>
+            <li>
+                <a href="Untitled-5.html">Students</a>
+            </li>
+            <li>
+                <a href="Untitled-4.html">Gallery</a>
+            </li>
+            <li>
+                <a href="Untitled-6.html">Admission</a>
+            </li>
+            <li>
+                <a href="Untitled-7.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- About page content -->
+    <main class="about-container">
+
+        <h2 class="page-title">About Our College</h2>
+        <div class="title-underline"></div>
+
+        <!-- College introduction -->
+        <section class="about-top-grid">
+
+            <img
+                src="https://gcetj.ac.in/photos/college-building/about.jpg"
+                alt="GCET Jammu College Building"
+                class="about-img"
+                loading="lazy"
+            >
+
+            <div class="about-top-text">
+                <h3>Welcome to GCET Jammu</h3>
+
+                <p>
+                    Government College of Engineering and Technology,
+                    Jammu, is a technical institution committed to
+                    providing quality engineering education. The
+                    college aims to encourage innovation, promote
+                    research, and develop skilled professionals who
+                    can contribute positively to society.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- Vision and mission -->
+        <section class="vision-mission-grid">
+
+            <div class="vision-mission-card">
+                <h3>Our Vision</h3>
+
+                <p>
+                    To be a center of excellence in technical education,
+                    fostering innovation, creativity, professional
+                    competence, and lifelong learning.
+                </p>
+            </div>
+
+            <div class="vision-mission-card">
+                <h3>Our Mission</h3>
+
+                <p>
+                    To nurture young minds through quality education,
+                    research, and innovation while developing technical
+                    knowledge, practical skills, ethical values, and
+                    social responsibility.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- Closing section -->
+        <section class="about-highlight">
+            <h3>Building Tomorrow's Engineers</h3>
+
+            <p>
+                At GCET Jammu, we strive to create an environment
+                where students can learn, explore new ideas, develop
+                their abilities, and prepare for successful careers.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer matching the homepage -->
+    <footer>
+        &copy; 2026 GCET Jammu. All Rights Reserved.
+    </footer>
+
+</body>
+</html>

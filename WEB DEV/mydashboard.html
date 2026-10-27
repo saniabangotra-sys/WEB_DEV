@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Profile - Sania Bangotra</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f1f5f9;
+      color: #0f172a;
+      padding: 24px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    /* Navigation Bar */
+    .nav-bar {
+      display: flex;
+      gap: 12px;
+      background-color: #ffffff;
+      padding: 12px 20px;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: #64748b;
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 8px 14px;
+      border-radius: 6px;
+    }
+
+    .nav-link:hover {
+      background-color: #f1f5f9;
+      color: #0f172a;
+    }
+
+    .nav-link.active {
+      background-color: #770d0d;
+      color: #ffffff;
+    }
+
+    /* Common Card Style */
+    .card {
+      background-color: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 20px;
+    }
+
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #1e293b;
+      margin-bottom: 16px;
+      border-bottom: 1px solid #f1f5f9;
+      padding-bottom: 10px;
+    }
+
+    /* Main Profile Header */
+    .profile-card {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: #851212;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+
+    .profile-info h1 {
+      font-size: 1.5rem;
+      margin-bottom: 4px;
+    }
+
+    .profile-info p {
+      color: #64748b;
+      font-size: 0.95rem;
+    }
+
+    .status-badge {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 4px 10px;
+      background-color: #dcfce7;
+      color: #15803d;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+
+    /* Info Grid for Details */
+    .details-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .info-group label {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .info-group span {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: #0f172a;
+    }
+
+    /* Academic Summary Badges */
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    .summary-box {
+      background-color: #f8fafc;
+      border: 1px solid #e2e8f0;
+      padding: 14px;
+      border-radius: 6px;
+      text-align: center;
+    }
+
+    .summary-box .value {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #740e0e;
+      margin-bottom: 4px;
+    }
+
+    .summary-box .label {
+      font-size: 0.75rem;
+      color: #64748b;
+      text-transform: uppercase;
+    }
+
+    /* Enrolled Courses Table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    th {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      color: #64748b;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #e2e8f0;
+    }
+
+    td {
+      padding: 12px 0;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.9rem;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    .grade-badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 4px;
+      background-color: #e2e8f0;
+      font-weight: 600;
+      font-size: 0.8rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .details-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .summary-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .profile-card {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .details-grid {
+        grid-template-columns: 1fr;
+      }
+      .summary-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Navigation -->
+    <nav class="nav-bar">
+      <a href="mydashboard.html" class="nav-link active">Student Profile</a>
+      <a href="cv.html" class="nav-link">Academic Standing</a>
+      <a href="yu.html" class="nav-link">Enrolled Courses</a>
+    </nav>
+    
+    <!-- 1. Header Profile Banner -->
+    <div class="card profile-card">
+      <div class="avatar">SB</div>
+      <div class="profile-info">
+        <h1>Sania Bangotra</h1>
+        <p>B.Tech Computer Science & Engineering</p>
+        <span class="status-badge">Active / Full-Time</span>
+      </div>
+    </div>
+
+    <!-- 2. Personal & Contact Information -->
+    <div class="card">
+      <div class="card-title">Student Details</div>
+      <div class="details-grid">
+        <div class="info-group">
+          <label>Student ID</label>
+          <span>2512050</span>
+        </div>
+        <div class="info-group">
+          <label>Roll Number</label>
+          <span>50</span>
+        </div>
+        <div class="info-group">
+          <label>Date of Birth</label>
+          <span>January 05, 2008</span>
+        </div>
+        <div class="info-group">
+          <label>Email Address</label>
+          <span>sb@university.edu</span>
+        </div>
+        <div class="info-group">
+          <label>Phone Number</label>
+          <span>1234567890</span>
+        </div>
+        <div class="info-group">
+          <label>Semester</label>
+          <span>3rd</span>
+        </div>
+        <div class="info-group">
+          <label>Batch / Year</label>
+          <span>2025 - 2029</span>
+        </div>
+        <div class="info-group">
+          <label>College</label>
+          <span>Government College of Engineering and Technology Jammu</span>
+        </div>
+        <div class="info-group">
+          <label>Residential Address</label>
+          <span>Sohal, Akhnoor</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

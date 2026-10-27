@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Admission Form - GCET Jammu</title>
+    <link rel="stylesheet" href="new css.css">
+
+</head>
+<body>
+       
+<header>
+    <img
+        src="https://gcetj.ac.in/department.php?dept=humanities"
+        alt="GCET Logo"
+        id="logo"
+    >
+
+    <div id="college-name">
+        <h1>Govt. College of Engineering and Technology, Jammu</h1>
+        <p>(Autonomous College)</p>
+
+        <div class="header-actions">
+            <a href="link form to website.html" class="btn">
+                Login
+            </a>
+        </div>
+    </div>
+</header>
+  
+<!-- Navigation: Admission is the active page -->
+<nav>
+    <ul>
+        <li>
+            <a href="Untitled-1.html">Home</a>
+        </li>
+        <li>
+            <a href="Untitled-2.html">About</a>
+        </li>
+        <li>
+            <a href="Untitled-3.html">Faculty</a>
+        </li>
+        <li>
+            <a href="Untitled-5.html">Students</a>
+        </li>
+        <li>
+            <a href="Untitled-4.html">Gallery</a>
+        </li>
+        <li>
+            <a href="Untitled-6.html" class="active">Admission</a>
+        </li>
+        <li>
+            <a href="Untitled-7.html">Contact</a>
+        </li>
+    </ul>
+</nav>
+  
+    <main class="container">
+        <h2 class="page-title">Student Admission Form</h2>
+        <div class="title-underline"></div>
+
+        <div class="form-card">
+            <form action="Untitled-1.html" method="post">
+                <div class="form-grid">
+                    
+                    <div class="form-group">
+                        <label>Full Name <span>*</span></label>
+                        <input type="text" name="fullname" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Date of Birth <span>*</span></label>
+                        <input type="date" name="dob" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email <span>*</span></label>
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Course Applied For <span>*</span></label>
+                        <select name="course" required>
+                            <option value="">-- Select Course --</option>
+                            <option value="CSE">B.Tech - Computer Science &amp; Engineering</option>
+                            <option value="ECE">B.Tech - Electronics &amp; Comm. Engineering</option>
+                            <option value="ME">B.Tech - Mechanical Engineering</option>
+                            <option value="CE">B.Tech - Civil Engineering</option>
+                            <option value="EE">B.Tech - Electrical Engineering</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Mobile Number <span>*</span></label>
+                        <input type="tel" name="mobile" placeholder="Enter mobile number" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Address <span>*</span></label>
+                        <input type="text" name="address" placeholder="Enter your address" required>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label>Gender <span>*</span></label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="gender" value="male" required> Male</label>
+                            <label><input type="radio" name="gender" value="female"> Female</label>
+                            <label><input type="radio" name="gender" value="other"> Other</label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-submit">Submit</button>
+                    <button type="reset" class="btn-reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        &copy; 2026 GCET Jammu. All Rights Reserved.
+    </footer>
+
+</body>
+</html>

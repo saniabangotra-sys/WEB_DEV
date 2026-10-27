@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Corner - GCET Jammu</title>
+
+    <!-- Common stylesheet used by the homepage -->
+    <link rel="stylesheet" href="new css.css">
+
+    <style>
+        /* Student Corner page styling */
+
+        .student-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .page-title {
+            text-align: center;
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .title-underline {
+            width: 80px;
+            height: 4px;
+            background-color: #961a28;
+            margin: 0 auto 35px;
+            border-radius: 2px;
+        }
+
+        .student-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 35px;
+            color: #555;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .student-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: stretch;
+        }
+
+        /* Student menu */
+
+        .student-menu {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        .student-menu-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 18px 20px;
+            background-color: #fff;
+            border-left: 5px solid #961a28;
+            border-radius: 6px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            color: #333;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s ease,
+                        transform 0.3s ease,
+                        box-shadow 0.3s ease;
+        }
+
+        .student-menu-item:hover {
+            background-color: #fff1f1;
+            transform: translateX(5px);
+            box-shadow: 0 5px 14px rgba(0, 0, 0, 0.12);
+        }
+
+        .student-menu-icon {
+            font-size: 24px;
+            min-width: 30px;
+            text-align: center;
+        }
+
+        /* Student graphic card */
+
+        .student-graphic-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 350px;
+            padding: 30px;
+            text-align: center;
+            color: white;
+            background: linear-gradient(
+                135deg,
+                #800000,
+                #961a28,
+                #b33a45
+            );
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .student-icon-group {
+            font-size: 75px;
+            margin-bottom: 25px;
+        }
+
+        .student-graphic-card h3 {
+            font-size: 28px;
+            margin: 0 0 15px;
+        }
+
+        .student-quote {
+            font-size: 20px;
+            line-height: 1.7;
+            font-style: italic;
+        }
+
+        .student-graphic-card p {
+            font-size: 15px;
+            line-height: 1.7;
+            margin-top: 20px;
+            max-width: 400px;
+        }
+
+        .student-note {
+            margin-top: 35px;
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 8px;
+            border: 1px solid #eee;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .student-note strong {
+            color: #800000;
+        }
+
+        /* Tablet layout */
+
+        @media (max-width: 768px) {
+            .student-section {
+                grid-template-columns: 1fr;
+            }
+
+            .student-graphic-card {
+                min-height: 280px;
+            }
+
+            .page-title {
+                font-size: 28px;
+            }
+        }
+
+        /* Mobile layout */
+
+        @media (max-width: 480px) {
+            .student-container {
+                padding: 25px 15px;
+            }
+
+            .student-menu-item {
+                padding: 15px;
+                font-size: 15px;
+            }
+
+            .student-icon-group {
+                font-size: 60px;
+            }
+
+            .student-graphic-card h3 {
+                font-size: 24px;
+            }
+
+            .student-quote {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header matching the homepage -->
+    <header>
+        <img
+            src="https://gcetj.ac.in/department.php?dept=humanities"
+            alt="GCET Logo"
+            id="logo"
+        >
+
+        <div id="college-name">
+            <h1>Govt. College of Engineering and Technology, Jammu</h1>
+            <p>(Autonomous College)</p>
+
+            <div class="header-actions">
+                <a href="link form to website.html" class="btn">
+                    Login
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation with Students marked active -->
+    <nav>
+        <ul>
+            <li>
+                <a href="Untitled-1.html">Home</a>
+            </li>
+            <li>
+                <a href="Untitled-2.html">About</a>
+            </li>
+            <li>
+                <a href="Untitled-3.html">Faculty</a>
+            </li>
+            <li>
+                <a href="Untitled-5.html" class="active">Students</a>
+            </li>
+            <li>
+                <a href="Untitled-4.html">Gallery</a>
+            </li>
+            <li>
+                <a href="Untitled-6.html">Admission</a>
+            </li>
+            <li>
+                <a href="Untitled-7.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Student Corner content -->
+    <main class="student-container">
+
+        <h2 class="page-title">Student Corner</h2>
+        <div class="title-underline"></div>
+
+        <p class="student-intro">
+            Welcome to the GCET Jammu Student Corner.
+            Explore student activities, campus events, achievements,
+            notices, clubs, and useful academic resources.
+        </p>
+
+        <div class="student-section">
+
+            <!-- Student menu -->
+            <div class="student-menu">
+
+                <div class="student-menu-item">
+                    <span class="student-menu-icon">&#127979;</span>
+                    <span>Clubs &amp; Societies</span>
+                </div>
+
+                <div class="student-menu-item">
+                    <span class="student-menu-icon">&#128197;</span>
+                    <span>Events</span>
+                </div>
+
+                <div class="student-menu-item">
+                    <span class="student-menu-icon">&#127942;</span>
+                    <span>Achievements</span>
+                </div>
+
+                <div class="student-menu-item">
+                    <span class="student-menu-icon">&#128276;</span>
+                    <span>Student Notice</span>
+                </div>
+
+                <div class="student-menu-item">
+                    <span class="student-menu-icon">&#128279;</span>
+                    <span>Important Links</span>
+                </div>
+
+            </div>
+
+            <!-- Student welcome card -->
+            <div class="student-graphic-card">
+
+                <div class="student-icon-group">&#128101;</div>
+
+                <h3>Welcome, Students!</h3>
+
+                <div class="student-quote">
+                    "Learn Together<br>
+                    Grow Together"
+                </div>
+
+                <p>
+                    Discover opportunities, develop your skills,
+                    participate in campus activities, and build
+                    a brighter future at GCET Jammu.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="student-note">
+            <strong>Stay Connected!</strong>
+            <p>
+                Keep checking student notices and college announcements
+                for the latest information about academic activities,
+                events, and opportunities.
+            </p>
+        </div>
+
+    </main>
+
+    <!-- Footer matching the homepage -->
+    <footer>
+        &copy; 2026 GCET Jammu. All Rights Reserved.
+    </footer>
+
+</body>
+</html>

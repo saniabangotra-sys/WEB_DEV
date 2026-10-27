@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Faculty - GCET Jammu</title>
+
+    <!-- Common stylesheet used by the homepage -->
+    <link rel="stylesheet" href="new css.css">
+
+    <style>
+        /* Faculty page specific styles */
+
+        .faculty-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .page-title {
+            text-align: center;
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .title-underline {
+            width: 80px;
+            height: 4px;
+            background-color: #961a28;
+            margin: 0 auto 25px;
+            border-radius: 2px;
+        }
+
+        .faculty-intro {
+            max-width: 800px;
+            margin: 0 auto 35px;
+            text-align: center;
+            color: #555;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .faculty-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .faculty-card {
+            background-color: #fff;
+            padding: 25px 20px;
+            text-align: center;
+            border-radius: 10px;
+            border-bottom: 4px solid #961a28;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease;
+        }
+
+        .faculty-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .faculty-avatar {
+            width: 115px;
+            height: 115px;
+            margin: 0 auto 18px;
+            border-radius: 50%;
+            background-color: #f8e8e8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border: 3px solid #961a28;
+            color: #961a28;
+            font-size: 55px;
+        }
+
+        .faculty-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .faculty-card h3 {
+            color: #333;
+            font-size: 19px;
+            margin: 0 0 10px;
+        }
+
+        .faculty-card p {
+            color: #800000;
+            font-size: 15px;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .faculty-label {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 6px 12px;
+            border-radius: 20px;
+            background-color: #f8e8e8;
+            color: #800000;
+            font-size: 13px;
+        }
+
+        .faculty-note {
+            text-align: center;
+            margin-top: 35px;
+            color: #666;
+            line-height: 1.7;
+        }
+
+        /* Tablet */
+        @media (max-width: 850px) {
+            .faculty-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 500px) {
+            .faculty-container {
+                padding: 25px 15px;
+            }
+
+            .faculty-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .page-title {
+                font-size: 28px;
+            }
+
+            .faculty-card {
+                padding: 22px 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header matching the homepage -->
+    <header>
+        <img
+            src="https://gcetj.ac.in/department.php?dept=humanities"
+            alt="GCET Logo"
+            id="logo"
+        >
+
+        <div id="college-name">
+            <h1>Govt. College of Engineering and Technology, Jammu</h1>
+            <p>(Autonomous College)</p>
+            <div class="header-actions">
+                <a href="link form to website.html" class="btn">
+                    Login
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation with Faculty marked active -->
+    <nav>
+        <ul>
+            <li>
+                <a href="Untitled-1.html">Home</a>
+            </li>
+            <li>
+                <a href="Untitled-2.html">About</a>
+            </li>
+            <li>
+                <a href="Untitled-3.html" class="active">Faculty</a>
+            </li>
+            <li>
+                <a href="Untitled-5.html">Students</a>
+            </li>
+            <li>
+                <a href="Untitled-4.html">Gallery</a>
+            </li>
+            <li>
+                <a href="Untitled-6.html">Admission</a>
+            </li>
+            <li>
+                <a href="Untitled-7.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Faculty content -->
+    <main class="faculty-container">
+
+        <h2 class="page-title">Our Faculty</h2>
+        <div class="title-underline"></div>
+
+        <p class="faculty-intro">
+            Meet the faculty members of Government College of
+            Engineering and Technology, Jammu. Our faculty supports
+            students in academic learning, technical development,
+            research, and professional growth.
+        </p>
+
+        <div class="faculty-grid">
+
+            <!-- Principal -->
+            <div class="faculty-card">
+                <div class="faculty-avatar">
+                    <img
+                        src="https://gcetj.ac.in/images/principal.png"
+                        alt="Principal of GCET Jammu"
+                        onerror="this.style.display='none'; this.parentElement.innerHTML='&#128100;';"
+                    >
+                </div>
+
+                <h3>Dr. Sameru Sharma</h3>
+                <p>Principal</p>
+                <span class="faculty-label">College Administration</span>
+            </div>
+
+            <!-- Computer Science -->
+            <div class="faculty-card">
+                <div class="faculty-avatar">&#128100;</div>
+                <h3>Faculty Members</h3>
+                <p>Computer Science and Engineering</p>
+                <span class="faculty-label">CSE Department</span>
+            </div>
+
+            <!-- Mechanical Engineering -->
+            <div class="faculty-card">
+                <div class="faculty-avatar">&#128100;</div>
+                <h3>Dr. P. Singh</h3>
+                <p>Mechanical Engineering</p>
+                <span class="faculty-label">ME Department</span>
+            </div>
+
+            <!-- Civil Engineering -->
+            <div class="faculty-card">
+                <div class="faculty-avatar">&#128100;</div>
+                <h3>Dr. N. Gupta</h3>
+                <p>Civil Engineering</p>
+                <span class="faculty-label">Civil Department</span>
+            </div>
+
+            <!-- Electrical Engineering -->
+            <div class="faculty-card">
+                <div class="faculty-avatar">&#128100;</div>
+                <h3>Dr. S. Kumar</h3>
+                <p>Electrical Engineering</p>
+                <span class="faculty-label">EE Department</span>
+            </div>
+
+            <!-- Basic Sciences -->
+            <div class="faculty-card">
+                <div class="faculty-avatar">&#128100;</div>
+                <h3>Dr. M. Khan</h3>
+                <p>Basic Sciences</p>
+                <span class="faculty-label">Basic Sciences Department</span>
+            </div>
+
+        </div>
+
+        <p class="faculty-note">
+            For the latest faculty details and departmental information,
+            please refer to the college's official resources.
+        </p>
+
+    </main>
+
+    <!-- Footer matching the homepage -->
+    <footer>
+        &copy; 2026 GCET Jammu. All Rights Reserved.
+    </footer>
+
+</body>
+</html>

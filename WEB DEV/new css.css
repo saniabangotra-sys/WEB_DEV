@@ -1,0 +1,583 @@
+
+/* ========================================
+   GCET JAMMU - COMMON WEBSITE DESIGN
+   ======================================== */
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ========================================
+   HEADER - MATCHING THE HOME PAGE
+   ======================================== */
+
+header,
+.header {
+    background-color: #f8f9fa;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+#logo,
+.logo {
+    width: 80px;
+    height: auto;
+    object-fit: contain;
+    margin-right: 0;
+}
+
+#college-name,
+.header-text {
+    flex-grow: 1;
+}
+
+#college-name h1,
+.header-text h1 {
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.4;
+    color: #333;
+}
+
+#college-name p,
+.header-text p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #777;
+}
+
+/* Login Button on Home Page */
+.header-actions {
+    margin-top: 12px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #961a28;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #700f0f;
+}
+
+/* ========================================
+   NAVIGATION BAR
+   ======================================== */
+
+nav,
+.navbar {
+    background-color: #961a1a;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a,
+.navbar a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover,
+.navbar a:hover {
+    background-color: #700f0f;
+}
+
+nav a.active,
+.navbar a.active {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+/* ========================================
+   HOME PAGE HERO SECTION
+   ======================================== */
+
+#hero {
+    position: relative;
+    background-image: url(
+        'https://gcetj.ac.in/photos/college-building/adm.jpg'
+    );
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+#hero-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+#hero h2 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin: 0;
+}
+
+#hero p {
+    font-size: 18px;
+    margin-top: 12px;
+}
+
+/* ========================================
+   HOME PAGE MAIN CONTENT
+   ======================================== */
+
+main {
+    padding: 40px;
+}
+
+#our-college {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#our-college h3 {
+    font-size: 28px;
+    color: #800000;
+    margin-bottom: 20px;
+}
+
+#our-college p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* ========================================
+   ADMISSION PAGE CONTAINER
+   ======================================== */
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Admission Heading */
+.page-title {
+    text-align: center;
+    font-size: 32px;
+    color: #800000;
+    margin-bottom: 10px;
+}
+
+.title-underline {
+    width: 100px;
+    height: 4px;
+    background-color: #961a1a;
+    margin: 0 auto 30px;
+    border-radius: 5px;
+}
+
+/* ========================================
+   ADMISSION FORM CARD
+   ======================================== */
+
+.form-card {
+    background-color: #fff;
+    padding: 35px;
+    border-radius: 8px;
+    border-top: 4px solid #961a1a;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Two-Column Form Layout */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 30px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+/* Form Labels */
+.form-group label {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.form-group label span {
+    color: #c00000;
+}
+
+/* Text Fields, Date, Email, Phone and Dropdown */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="date"],
+.form-group input[type="tel"],
+.form-group select {
+    width: 100%;
+    min-height: 45px;
+    padding: 11px 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+/* Placeholder Styling */
+.form-group input::placeholder {
+    color: #888;
+}
+
+/* Focus Effect */
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #961a1a;
+    box-shadow: 0 0 0 3px rgba(150, 26, 26, 0.12);
+}
+
+/* Full-Width Form Fields */
+.full-width {
+    grid-column: 1 / -1;
+}
+
+/* ========================================
+   GENDER RADIO BUTTONS
+   ======================================== */
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 8px 0;
+}
+
+.radio-group label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    font-size: 15px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #961a1a;
+    cursor: pointer;
+}
+
+/* ========================================
+   SUBMIT AND RESET BUTTONS
+   ======================================== */
+
+.form-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 1px solid #eee;
+}
+
+.btn-submit,
+.btn-reset {
+    min-width: 130px;
+    padding: 12px 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s, transform 0.2s;
+}
+
+.btn-submit {
+    background-color: #961a28;
+    color: #fff;
+}
+
+.btn-submit:hover {
+    background-color: #700f0f;
+    transform: translateY(-2px);
+}
+
+.btn-reset {
+    background-color: #e5e5e5;
+    color: #333;
+}
+
+.btn-reset:hover {
+    background-color: #ccc;
+    transform: translateY(-2px);
+}
+
+/* Keyboard Accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+    outline: 2px solid #961a1a;
+    outline-offset: 3px;
+}
+
+/* ========================================
+   FOOTER - SAME AS HOME PAGE
+   ======================================== */
+
+footer,
+.footer {
+    background-color: #800000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+/* ========================================
+   TABLET RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+    }
+
+    header,
+    .header {
+        padding: 18px;
+        gap: 15px;
+    }
+
+    #logo,
+    .logo {
+        width: 65px;
+    }
+
+    #college-name h1,
+    .header-text h1 {
+        font-size: 20px;
+    }
+
+    nav li {
+        margin: 0 4px;
+    }
+
+    nav a,
+    .navbar a {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #hero {
+        min-height: 320px;
+    }
+
+    #hero h2 {
+        font-size: 36px;
+    }
+
+    main {
+        padding: 30px 20px;
+    }
+
+    .container {
+        margin: 25px auto;
+        padding: 15px;
+    }
+
+    .page-title {
+        font-size: 28px;
+    }
+
+    .form-card {
+        padding: 25px;
+    }
+
+    .form-grid {
+        gap: 20px;
+    }
+}
+
+/* ========================================
+   MOBILE RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 480px) {
+    header,
+    .header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 12px;
+    }
+
+    #logo,
+    .logo {
+        width: 65px;
+    }
+
+    #college-name h1,
+    .header-text h1 {
+        font-size: 19px;
+    }
+
+    .header-actions {
+        margin-top: 12px;
+    }
+
+    nav {
+        padding: 8px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 2px;
+    }
+
+    nav li {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    nav a,
+    .navbar a {
+        display: block;
+        width: 100%;
+        padding: 9px;
+        font-size: 14px;
+    }
+
+    #hero {
+        min-height: 260px;
+    }
+
+    #hero h2 {
+        font-size: 29px;
+    }
+
+    #hero p {
+        font-size: 16px;
+    }
+
+    main {
+        padding: 25px 12px;
+    }
+
+    #our-college h3 {
+        font-size: 24px;
+    }
+
+    #our-college p {
+        font-size: 15px;
+    }
+
+    .container {
+        margin: 20px auto;
+        padding: 12px;
+    }
+
+    .page-title {
+        font-size: 24px;
+    }
+
+    .form-card {
+        padding: 20px 15px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+
+    .radio-group {
+        gap: 16px;
+    }
+
+    .form-actions {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .btn-submit,
+    .btn-reset {
+        width: 100%;
+    }
+
+    footer,
+    .footer {
+        padding: 16px 10px;
+        font-size: 12px;
+    }
+}
